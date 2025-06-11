@@ -1,7 +1,7 @@
-import type { Route } from  "./+types/post";
+import type { Route } from  "./+types/pokemon";
 
-export async function loader(params:Route.LoaderArgs) {
-    const { name } = params.name;
+export async function loader(params: Route.LoaderArgs) {
+    const { name } = params.params;
     // Simulate fetching data from an API or database
     const pokemonData = {
         name: name,
@@ -21,7 +21,7 @@ export default function Pokemon({loaderData}: Route.ComponentProps) {
   return (
     <div>
       <h1>Pokemon Page</h1>
-      <p>Pokemon name:{loaderData.name}</p>
+      <p>Pokemon name: {loaderData.name}</p>
       <p>Pokemon type: {loaderData.type}</p>
         <p>Abilities: {loaderData.abilities.join(", ")}</p>
         {/* You can display more properties as needed */}
