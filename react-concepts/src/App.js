@@ -1,5 +1,5 @@
 const user = {
-    name: 'Jon Doe',
+    name: 'Jane Doe',
     imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg',
     imageSize: 100,
 }

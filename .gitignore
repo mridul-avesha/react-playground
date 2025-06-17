@@ -1,5 +1,4 @@
-node_modules
-.react-router
+*/node_modules
+*/build
 
-react-concepts/node_modules
-react-concepts/build
+try-react-router/.react-router
