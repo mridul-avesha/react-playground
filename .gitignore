@@ -2,3 +2,5 @@
 */build
 
 try-react-router/.react-router
+.react-router
+node_modules
